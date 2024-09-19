@@ -1,10 +1,9 @@
 import { StyleSheet } from 'react-native';
-import { ifIphoneX } from 'react-native-iphone-x-helper';
 
-const headerHeight = ifIphoneX(88, 60);
+const headerHeight = 80;
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: 'transparent' },
+  container: { flex: 1, backgroundColor: 'transparent'},
   headerContainer: {
     height: headerHeight,
   },
@@ -12,6 +11,7 @@ const styles = StyleSheet.create({
     height: headerHeight,
     alignItems: 'center',
     justifyContent: 'flex-end',
+    backgroundColor: 'white',
     paddingBottom: 12,
   },
   headline: {
@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
   },
   title: {
     letterSpacing: 0.011,
-    fontWeight: '700',
+    fontWeight: '600',
+    fontFamily: 'Inter',
     marginLeft: 16,
   },
 });
